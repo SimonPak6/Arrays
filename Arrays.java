@@ -27,15 +27,20 @@ public class Arrays
         System.out.println(str2);
         System.out.println(str3);
         String[] strArray = {"Alpha","Bravo","Charlie","Delta","Echo"};
-          for (int iterate = 0; iterate < strArray.length; iterate++) {
+        for (int iterate = 0; iterate < strArray.length; iterate++) {
             System.out.println(strArray[iterate]);
         }
         for (int iterate = 0; iterate < strArray.length; iterate++) {
             System.out.print(strArray[iterate]);
+        }  
+        for (int iterate = 0; iterate < strArray.length; iterate++) {
+            System.out.println(" ");
         }
         for (int iterate = 0; iterate < strArray.length; iterate++) {
-            System.out.println(strArray[iterate]);
-            System.out.print("-");
-        }
+            System.out.print(strArray[iterate]);
+            if (iterate < strArray.length -1) {
+                System.out.print("-");
+            }
+        }   
     }
 }
